@@ -1,13 +1,12 @@
-import * as S from './styles'
+import { Wrapper, Title, Description, BGImage } from './styles'
+import { bgImage } from 'images'
 
-const Main = ({
-  title = 'Next.js Boilerplate',
-  description = 'TypeScript, ReactJS, NextJS & Styled Components',
-}) => (
-  <S.Wrapper>
-    <S.Title>{title}</S.Title>
-    <S.Description>{description}</S.Description>
-  </S.Wrapper>
+const Main = ({ title = 'NEEDESIGN', description = 'from Belousovsky' }) => (
+  <Wrapper>
+    <Title>{title}</Title>
+    <Description>{description}</Description>
+    <BGImage src={bgImage.src} />
+  </Wrapper>
 )
 
 export default Main
